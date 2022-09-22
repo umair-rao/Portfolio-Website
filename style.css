@@ -8,14 +8,9 @@
   flex-direction: row;
 }
 
-#welcome {
-  font-size: 20px;
-  justify-content: end;
-}
-
 .menu {
   align-self: center;
-  padding-left: 280px;
+  padding-left: 240px;
 }
 
 .headline_section {
@@ -31,12 +26,10 @@
 }
 
 .primary-text {
-  align-self: center;
-  font-size: 40px;
+  font-family: 'Inter';
+  font-size: 45px;
   font-weight: 700;
   line-height: 52px;
-  text-align: center;
-  text-justify: inter-word;
 }
 
 #second {
@@ -52,8 +45,20 @@
   text-align: center;
 }
 
-.link {
-  align-content: center;
-  justify-content: space-around;
-  padding-left: 35%;
+.links {
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+#links-list {
+  list-style-type: none;
+}
+
+#links-list li {
+  display: inline;
+  padding: 6px;
+}
+#action {
+  position: absolute;
+  padding-top: 30px;
 }
