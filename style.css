@@ -5,7 +5,7 @@
 
 .toolbar {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
 }
 
 #welcome {
@@ -14,7 +14,7 @@
 }
 
 .menu {
-  align-self:center;
+  align-self: center;
   padding-left: 280px;
 }
 
@@ -35,7 +35,6 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  font-weight: bold;
   text-align: center;
   text-justify: inter-word;
 }
