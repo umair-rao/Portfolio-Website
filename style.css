@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.toolbar {
+  display: flex;
+  flex-direction: row;  
+}
+#welcome {
+    font-size: 20px;
+    justify-content: end;
+}
+.menu {
+  align-self:center;
+  padding-left: 280px;
+}
+.headline_section {
+    position: relative;
+    text-align: center;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.primary-text {
+  align-self: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  font-weight: bold;
+  text-align: center;
+  text-justify: inter-word;
+}
+#second {
+    color: #36B37E;
+}
+.second-text {
+  width: 327px;
+  height: 164px;
+  font-weight: 400;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.link {
+  align-content: center;
+  justify-content: space-around;
+  padding-left: 35%;
+}
