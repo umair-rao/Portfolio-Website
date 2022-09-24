@@ -62,3 +62,185 @@
   position: absolute;
   padding-top: 30px;
 }
+
+.works {
+ display: grid;
+ row-gap: 20px;
+ grid-template-rows: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+  width: 327px;
+  border: 1px solid #D0D9D4;
+  border-radius: 8px;
+}
+
+#Recent-Works-Text {
+  text-align: center;
+  width: 327px;
+  height: 97px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  padding-left: 25px;
+}
+
+.img-Plaholder {
+  background-color: #EBF0EE;
+  width: 327px;
+  height: 230px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D0D9D4;
+  border-radius: 8px;
+}
+
+.project-detail {
+  width: 327px;
+  height: 222px;
+  background: #FFFFFF;
+  border: 1px solid #D0D9D4;
+  border-radius: 8px;
+}
+
+#card-text {
+  font-size: 24px;
+  font-weight: 600;
+  width: 295px;
+  height: 57px;
+  padding-left: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+#work-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+#work-list li {
+  display: inline;
+  padding: 9px;
+  background-color: #EBF0EE;
+  border-radius: 4px;
+  
+}
+
+#see-project-btn {
+  width: 122px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #36b37f;
+  border-radius: 4px;
+  margin-left: 110px;
+  margin-top: 30px;
+}
+
+#see-project {
+  text-align: center;
+  padding-top: 12px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 100px;
+}
+
+.about-detail {
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+#about-text {
+  padding-right: 35px;
+}
+
+#get-my-resume-btn {
+  width: 150px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #36b37f;
+  border-radius: 4px;
+  margin-left: 115px;
+  margin-top: 30px;
+}
+
+#get-my-resume {
+  text-align: center;
+  padding-top: 12px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 352px;
+  background-color: #EBF0EE;
+  align-items: center;
+  margin-left: 30px;
+  border-radius: 8px;
+}
+
+.categoery-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+#category-list-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+
+#category-list-ul li {
+  display: inline;
+  background-color: #FFFFFF;
+  color: #36b37e;
+  margin: 2px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.category-2nd-list {
+  padding-top: 20px;
+  padding-right: 50px;
+}
+
+#category-2nd-list-ul li {
+  display: inline;
+  background-color: #FFFFFF;
+  color: #36b37e;
+  margin: 2px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.about {
+  display: grid;
+  row-gap: 20px;
+  grid-template-rows: auto;
+ }
