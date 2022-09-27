@@ -1,8 +1,10 @@
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
+
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+html { font-family: 'Inter var', sans-serif; }
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -32,7 +34,7 @@ html { font-family: 'Inter', sans-serif; }
 
 .primary-text {
   font-size: 45px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   line-height: 52px;
 }
@@ -90,7 +92,7 @@ html { font-family: 'Inter', sans-serif; }
   height: 97px;
   font-size: 40px;
   font-weight: 700;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   line-height: 52px;
   padding-left: 85px;
 }
@@ -114,7 +116,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 #card-text {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-weight: 600;
   width: 295px;
@@ -131,14 +133,14 @@ html { font-family: 'Inter', sans-serif; }
 
 #work-list li {
   display: inline;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   padding: 6px;
   background-color: #ebf0ee;
   border-radius: 4px;
 }
 
 .see-project-button {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   background-color: #36b37e;
   border: none;
   color: white;
@@ -155,7 +157,7 @@ html { font-family: 'Inter', sans-serif; }
 .about-title {
   display: flex;
   justify-content: flex-end;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -166,7 +168,7 @@ html { font-family: 'Inter', sans-serif; }
 .about-detail {
   width: 351px;
   height: 189px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -186,7 +188,7 @@ html { font-family: 'Inter', sans-serif; }
   padding: 12px;
   text-align: center;
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 17px;
   border-radius: 4px;
   margin-top: 15px;
@@ -205,7 +207,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 .categoery-title {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -256,7 +258,7 @@ html { font-family: 'Inter', sans-serif; }
   width: 327px;
   height: 320px;
   text-align: center;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -295,7 +297,7 @@ input {
 
 #footer-email {
   width: 375px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #42526e;
