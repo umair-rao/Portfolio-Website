@@ -1,3 +1,8 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -27,6 +32,7 @@
 
 .primary-text {
   font-size: 45px;
+  font-family: 'Inter';
   font-weight: 700;
   line-height: 52px;
 }
@@ -84,6 +90,7 @@
   height: 97px;
   font-size: 40px;
   font-weight: 700;
+  font-family: 'Inter';
   line-height: 52px;
   padding-left: 85px;
 }
@@ -107,6 +114,7 @@
 }
 
 #card-text {
+  font-family: 'Inter';
   font-size: 24px;
   font-weight: 600;
   width: 295px;
@@ -123,12 +131,14 @@
 
 #work-list li {
   display: inline;
-  padding: 9px;
+  font-family: 'Inter';
+  padding: 6px;
   background-color: #ebf0ee;
   border-radius: 4px;
 }
 
 .see-project-button {
+  font-family: 'Inter';
   background-color: #36b37e;
   border: none;
   color: white;
@@ -145,6 +155,7 @@
 .about-title {
   display: flex;
   justify-content: flex-end;
+  font-family: 'Inter';
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -155,6 +166,7 @@
 .about-detail {
   width: 351px;
   height: 189px;
+  font-family: 'Inter';
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -174,11 +186,11 @@
   padding: 12px;
   text-align: center;
   text-decoration: none;
+  font-family: 'Inter';
   font-size: 17px;
   border-radius: 4px;
+  margin-top: 15px;
   margin-left: 180px;
-  margin-bottom: 20px;
-  cursor: pointer;
 }
 
 .category {
@@ -193,6 +205,7 @@
 }
 
 .categoery-title {
+  font-family: 'Inter';
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -209,7 +222,7 @@
   background-color: #fff;
   color: #36b37e;
   margin: 2px;
-  padding: 12px;
+  padding: 8px;
   border-radius: 8px;
 }
 
@@ -243,11 +256,13 @@
   width: 327px;
   height: 320px;
   text-align: center;
+  font-family: 'Inter';
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
   padding-left: 40px;
+  margin-bottom: 100px;
 }
 
 input {
@@ -280,6 +295,7 @@ input {
 
 #footer-email {
   width: 375px;
+  font-family: 'Inter';
   font-weight: 400;
   font-size: 20px;
   color: #42526e;
