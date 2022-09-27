@@ -254,7 +254,8 @@ input {
   margin-bottom: 30px;
 }
 
-#fname, #email {
+#fname,
+#email {
   width: 327px;
   height: 48px;
   border-radius: 4px;
