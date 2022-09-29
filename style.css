@@ -4,7 +4,7 @@ html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
-
+/* ----------------Moile Version-------------- */
 .container {
   display: flex;
   flex-direction: column;
@@ -23,6 +23,10 @@ html { font-family: 'Inter', sans-serif; }
 .headline_section {
   position: relative;
   text-align: center;
+}
+
+#headline-img-desktop {
+  display: none;
 }
 
 .text {
@@ -71,10 +75,10 @@ html { font-family: 'Inter', sans-serif; }
   padding-top: 30px;
 }
 
-.works {
+.cards-group {
   display: grid;
-  row-gap: 20px;
   grid-template-rows: auto;
+  row-gap: 20px;
 }
 
 .card {
@@ -84,17 +88,19 @@ html { font-family: 'Inter', sans-serif; }
   width: 327px;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  align-items: center;
 }
 
 #Recent-Works-Text {
   text-align: center;
   width: 327px;
-  height: 97px;
+  height: auto;
   font-size: 40px;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
   line-height: 52px;
-  padding-left: 85px;
+  padding-left: 60px;
+  
 }
 
 .img-Plaholder {
@@ -193,6 +199,11 @@ html { font-family: 'Inter', sans-serif; }
   border-radius: 4px;
   margin-top: 15px;
   margin-left: 180px;
+}
+
+.skills {
+  display: grid;
+  row-gap: 20px;
 }
 
 .category {
@@ -303,3 +314,110 @@ input {
   color: #42526e;
   margin-left: 25px;
 }
+/* ---------------Mobile Vesrion Ends Here--------------- */
+
+/* -----------------------Desktop Vesrion Started----------------------- */
+
+@media screen and (min-width: 768px) {
+
+  #headline-img-desktop {
+    display: block;
+    width: 100%;
+  }
+ 
+
+  #logo-image,
+  .menu,
+  #headline-img-mobile {
+    display: none;
+  }
+
+  .text {
+    padding-bottom: 10%;
+  }
+
+  #links-list {
+    margin-right: 8%;
+  }
+
+  #action {
+    margin-left: 29%;
+  }
+  
+  .second-text {
+    width: 91%;
+    height: auto;
+  }
+
+  .cards-group {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  #Recent-Works-Text {
+    width: 100%;
+    height: auto;
+    padding-left: 2%;
+  }
+
+  #about-text {
+    padding-right: 345px;
+  }
+
+  .about-me {
+    width: 100%;
+    display: grid;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+  #get-my-resume-btn{
+    margin-left: 27%;
+  }
+
+  .about-detail {
+    width: 900px;
+    height: 96px;
+  }
+
+  .about1 {
+    display: none;
+  }
+
+  .skills {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: center;
+  }
+
+  #form-detail {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+    margin-left: 35%;
+    margin-top: 10%;
+  }
+
+  #form-desc {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .form {
+    width: 60%;
+  }
+
+  #footer-email {
+    display: none;
+  }
+
+  #links-2 {
+    margin-left: 80%;
+    width: 100%;
+  }
+}
+
+/* 
+--------------Desktop Version Ends Here-------------- */
