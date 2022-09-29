@@ -4,6 +4,7 @@ html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
+
 /* ----------------Moile Version-------------- */
 
 .container {
@@ -324,7 +325,7 @@ input {
     display: block;
     width: 100%;
   }
- 
+
   #logo-image,
   .menu,
   #headline-img-mobile {
@@ -386,9 +387,9 @@ input {
   }
 
   .skills {
-   display: grid;
-   grid-template-columns: auto auto auto;
-   justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
   }
 
   #form-detail {
@@ -419,5 +420,5 @@ input {
   }
 }
 
-/* 
+/*
 --------------Desktop Version Ends Here-------------- */
