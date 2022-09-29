@@ -5,6 +5,7 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 /* ----------------Moile Version-------------- */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -100,7 +101,6 @@ html { font-family: 'Inter', sans-serif; }
   font-family: 'Inter', sans-serif;
   line-height: 52px;
   padding-left: 60px;
-  
 }
 
 .img-Plaholder {
@@ -314,18 +314,17 @@ input {
   color: #42526e;
   margin-left: 25px;
 }
+
 /* ---------------Mobile Vesrion Ends Here--------------- */
 
 /* -----------------------Desktop Vesrion Started----------------------- */
 
 @media screen and (min-width: 768px) {
-
   #headline-img-desktop {
     display: block;
     width: 100%;
   }
  
-
   #logo-image,
   .menu,
   #headline-img-mobile {
@@ -343,7 +342,7 @@ input {
   #action {
     margin-left: 29%;
   }
-  
+
   .second-text {
     width: 91%;
     height: auto;
@@ -355,6 +354,7 @@ input {
     row-gap: 30px;
     justify-content: center;
   }
+
   #Recent-Works-Text {
     width: 100%;
     height: auto;
@@ -372,7 +372,7 @@ input {
     justify-content: center;
   }
 
-  #get-my-resume-btn{
+  #get-my-resume-btn {
     margin-left: 27%;
   }
 
