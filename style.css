@@ -12,6 +12,15 @@ html { font-family: 'Inter', sans-serif; }
   flex-direction: column;
 }
 
+.navbar {
+  display: none;
+}
+
+#logo-image {
+  padding-left: 15%;
+  padding-top: 15%;
+}
+
 .toolbar {
   display: flex;
   flex-direction: row;
@@ -260,10 +269,9 @@ html { font-family: 'Inter', sans-serif; }
   grid-template-rows: auto;
 }
 
-.form {
+.form-section {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
 }
 
 #form-desc {
@@ -275,8 +283,12 @@ html { font-family: 'Inter', sans-serif; }
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  padding-left: 40px;
+  padding-left: 18%;
   margin-bottom: 100px;
+}
+
+.form {
+  margin-left: 17%;
 }
 
 input {
@@ -303,7 +315,7 @@ input {
 }
 
 #links-2 {
-  margin-left: 80px;
+  margin-left: 24%;
   margin-top: 10px;
 }
 
@@ -324,6 +336,24 @@ input {
   #headline-img-desktop {
     display: block;
     width: 100%;
+  }
+
+  .navbar {
+    display: block;
+    margin-left: 41%;
+  }
+
+  #navbar-list {
+    list-style-type: none;
+  }
+
+  #navbar-list li {
+    display: inline;
+    padding: 12px;
+  }
+
+  a:link {
+    text-decoration: none;
   }
 
   #logo-image,
@@ -392,31 +422,61 @@ input {
     justify-content: center;
   }
 
-  #form-detail {
+  .form-section {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+  }
+
+  #form-detail {
     display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 40px;
-    margin-left: 35%;
-    margin-top: 10%;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+    padding-left: 7%;
+  }
+
+  .form-description {
+    width: 100%;
   }
 
   #form-desc {
-    width: 100%;
+    width: 75%;
+    margin-left: 13%;
     text-align: justify;
   }
 
   .form {
-    width: 60%;
+    width: 50%;
+  }
+
+  #fname,
+  #email {
+    width: 400px;
+    height: 48px;
+  }
+  
+  #textarea {
+    width: 400px;
+    height: 114px;
+    border-radius: 4px;
+    border-color: #60c095;
+  }
+
+  #get-in-btn {
+    margin-left: 0;
   }
 
   #footer-email {
     display: none;
   }
-
   #links-2 {
-    margin-left: 80%;
+    margin: 0;
     width: 100%;
+    border-top: 2px solid #dfe1e6;
+  }
+
+  #links-2 ul {
+    margin-left: 45%;
   }
 }
 
