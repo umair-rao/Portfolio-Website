@@ -454,7 +454,7 @@ input {
     width: 400px;
     height: 48px;
   }
-  
+
   #textarea {
     width: 400px;
     height: 114px;
@@ -469,6 +469,7 @@ input {
   #footer-email {
     display: none;
   }
+  
   #links-2 {
     margin: 0;
     width: 100%;
