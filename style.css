@@ -329,12 +329,12 @@ input {
   margin-left: 25px;
 }
 
-.green-button:hover, 
+.green-button:hover,
 .see-project-button:hover {
   background-color: #2cd890;
 }
 
-.green-button:active, 
+.green-button:active,
 .see-project-button:active {
   background-color: #49c04d;
   box-shadow: 0 5px #666;
