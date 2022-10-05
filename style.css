@@ -116,7 +116,7 @@ html { font-family: 'Inter', sans-serif; }
 
 .card:hover,
 .category:hover {
-  box-shadow: 0 8px 16px 0 #36b37e;
+  box-shadow: 0 8px 16px 0 #14e7dd;
   width: 330px;
   height: auto;
 }
@@ -339,12 +339,14 @@ input {
 
 .green-button:hover,
 .see-project-button:hover {
-  background-color: #2cd890;
+  background-color: #14e7dd;
+  color: black;
 }
 
 .green-button:active,
 .see-project-button:active {
-  background-color: #49c04d;
+  background-color: #14e7dd;
+  color: black;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
