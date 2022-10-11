@@ -52,8 +52,10 @@ html { font-family: 'Inter', sans-serif; }
 .cross {
   background-color: transparent;
   border: none;
-  margin-left: 85%;
-  margin-top: 25%;
+  font-size: 20px;
+  color: #67798e;
+  margin-left: 80%;
+  margin-top: 15%;
 }
 
 .mobile-menu-list a {
@@ -62,7 +64,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 .mobile-menu-list li {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .mobile-menu-list ul {
