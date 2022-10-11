@@ -18,6 +18,6 @@ function hideMenu() {
 menuButton.addEventListener('click', showMenu);
 
 cross.addEventListener('click', hideMenu);
-for (let i = 0; i < links.length; i++) {
+for (let i = 0; i < links.length; i+=1) {
   links[i].addEventListener('click', hideMenu);
 }
