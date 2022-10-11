@@ -21,15 +21,15 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu">
-                <button class="cross">
+            <div class="mobile-menu hide" id="menu-id">
+                <button class="cross" id="cross-id">
                         <i class="fa-solid fa-x"></i>
                 </button>
                 <div class="mobile-menu-list">
                 <ul>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#works" class="menu-link">Portfolio</a></li>
+                    <li><a href="#about" class="menu-link">About</a></li>
+                    <li><a href="#contact" class="menu-link">Contact</a></li>
                 </ul>
                 </div>
                 </div> 
@@ -37,7 +37,7 @@
                 <img id="logo-image" src="images/logo.svg" alt="Logo Image" />
             </a>
             <nav class="menu">
-                <img src="images/menu.svg" alt="Menu icon">
+                <img src="images/menu.svg" alt="Menu icon" id="menu-button">
             </nav>   
         </header>
         <section class="headline_section">
@@ -76,7 +76,7 @@
     <!-- Tollbar and Header section end header -->
 
     <!-- Card section starts from here -->
-    <section class="works">
+    <section class="works" id="works">
         <h2 id="Recent-Works-Text">My Recent Works</h2>
         <div class="cards-group">
             <div class="card">
@@ -186,7 +186,7 @@
     <!-- Card Section end here -->
 
     <!-- About Section starts from here -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-me">
             <div class="about-title">
                 <h2 id="about-text">About me</h2>
@@ -267,7 +267,7 @@
     <!-- About section end here  -->
 
     <!-- footer section starts from here -->
-    <footer class="form-section">
+    <footer class="form-section" id="contact">
         <div id="form-detail">
             <div class="form-description">
                 <h2 id="form-desc">I'm always interested in hearing about new projects, so if you'd like to chat please
@@ -301,6 +301,7 @@
         </div>
     </footer>
     <!-- footer section end here -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
