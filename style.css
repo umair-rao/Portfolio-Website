@@ -31,6 +31,34 @@ html { font-family: 'Inter', sans-serif; }
   padding-left: 290px;
 }
 
+.mobile-menu {
+  height: 100vh;
+  background-color: rgb(168, 39, 39);
+  position: absolute;
+  width: 100%;
+}
+
+.cross {
+  background-color: transparent;
+  border: none;
+  margin-left: 85%;
+  margin-top: 25%;
+}
+
+.mobile-menu-list a {
+  text-decoration: none;
+  color: #3a4a42;
+}
+
+.mobile-menu-list ul {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .headline_section {
   position: relative;
   text-align: center;
