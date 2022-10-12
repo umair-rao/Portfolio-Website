@@ -195,14 +195,14 @@ const EMAIL_INVALID = 'Enter email in lowercase';
 form.addEventListener('submit', (event) => {
   // stop form submission
   event.preventDefault();
-  
+
   // validate the form
-  
-  let emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
-  
+
+  const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
+
   // if valid, submit the form.
-  
+
   if (emailValid) {
-		form.submit();
-	}
+    form.submit();
+  }
 });
