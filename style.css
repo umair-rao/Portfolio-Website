@@ -132,6 +132,50 @@ html { font-family: 'Inter', sans-serif; }
   padding-top: 30px;
 }
 
+.popup-window {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: calc(50% - 343px/2);
+  top: 20px;
+}
+
+.button-images {
+  position: relative;
+  left: 10px;
+  top: 4px;
+}
+
+.popup-buttons {
+  font-family: 'Inter', sans-serif;
+  background-color: #36b37e;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 4px;
+  width: 145px;
+  margin-left: 10px;
+}
+
+.acsess-buttons {
+  display: flex;
+}
+
+#popup-text {
+  width: 311px;
+  height: 313px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 4%;
+}
+
 .cards-group {
   display: grid;
   grid-template-rows: auto;
