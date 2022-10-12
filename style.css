@@ -422,6 +422,14 @@ input {
   margin-bottom: 30px;
 }
 
+.error {
+  color: red;
+}
+
+.error-box {
+  border: 3px solid red;
+}
+
 #fname,
 #email {
   width: 327px;

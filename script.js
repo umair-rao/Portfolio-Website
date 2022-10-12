@@ -161,44 +161,39 @@ for (let i = 0; i < popupButtons.length; i += 1) {
 }
 
 function showMessage (input, message, type) {
-  const msg = email.parentNode.querySelector("");
+  const msg = input.parentNode.querySelector("small");
+  const emailInput = document.getElementById('email')
   msg.innerText = message;
   
+  // update the class for the input
+	msg.className = 'error'
+  emailInput.className = 'error-box'
 }
 
 function showError(input, message) {
 	return showMessage(input, message, false);
 }
 
-function showSuccess(input) {
-	return showMessage(input, "", true);
-}
-
-function hasValue(input, message) {
-	if (email.value.trim() === "") {
-		return showError(input, message);
-	}
-	return showSuccess(input);
-}
-
-function validateEmail(input, requiredMsg, invalidMsg) {
-	// check if the value is not empty
-	if (!hasValue(input, requiredMsg)) {
-		return false;
-	}
-	// validate email format
-	const emailRegex =
-		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
+function validateEmail(input, invalidMsg) {
 	const email = input.value.trim();
-	if (!emailRegex.test(email)) {
-		return showError(input, invalidMsg);
-	}
-	return true;
+  if (!(email === String(email).toLowerCase())) {
+    return showError(input, invalidMsg);
+  }
+  return true
 }
 
 const form = document.querySelector("#form-id");
 
-const NAME_REQUIRED = "Please enter your name";
-const EMAIL_REQUIRED = "Please enter your email";
-const EMAIL_INVALID = "Please enter a correct email address format";
+const EMAIL_INVALID = "Enter email in lowercase";
+
+form.addEventListener("submit", function (event) {
+	// stop form submission
+	event.preventDefault();
+
+	// validate the form
+	let emailValid = validateEmail(form.elements["email"], EMAIL_INVALID);
+	// if valid, submit the form.
+	if (emailValid) {
+		form.submit();
+	}
+});
