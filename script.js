@@ -27,9 +27,16 @@ for (let i = 0; i < links.length; i += 1) {
 const projects = [
   {
     name: 'Multi-Post Stories Gain+Glory',
-    popup_name: 'Keeping track of hundreds of components',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/About1',
+    image: '<img src="images/Snapshoot Portfolio.png" alt="Portfolio Image" />',
+    technologies: ['Ruby Rails', 'Javascript', 'css', 'html'],
+    live_link: '',
+    live_source: '',
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: '<img src="images/Desktop Snapshoot Portfolio.png" alt="Portfolio Image" />',
     technologies: ['Ruby Rails', 'Javascript', 'css', 'html'],
     live_link: '',
     live_source: '',
@@ -38,7 +45,7 @@ const projects = [
     name: 'Multi-Post Stories Gain+Glory',
     popup_name: 'Keeping track of hundreds of components',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/About1',
+    image: '<img src="images/Snapshoot Portfolio.png" alt="Portfolio Image" />',
     technologies: ['Ruby Rails', 'Javascript', 'css', 'html'],
     live_link: '',
     live_source: '',
@@ -47,7 +54,7 @@ const projects = [
     name: 'Multi-Post Stories Gain+Glory',
     popup_name: 'Keeping track of hundreds of components',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/About1',
+    image: '<img src="images/Desktop Snapshoot Portfolio.png" alt="Portfolio Image" />',
     technologies: ['Ruby Rails', 'Javascript', 'css', 'html'],
     live_link: '',
     live_source: '',
@@ -56,7 +63,7 @@ const projects = [
     name: 'Multi-Post Stories Gain+Glory',
     popup_name: 'Keeping track of hundreds of components',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/About1',
+    image: '<img src="images/Snapshoot Portfolio.png" alt="Portfolio Image" />',
     technologies: ['Ruby Rails', 'Javascript', 'css', 'html'],
     live_link: '',
     live_source: '',
@@ -65,16 +72,7 @@ const projects = [
     name: 'Multi-Post Stories Gain+Glory',
     popup_name: 'Keeping track of hundreds of components',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/About1',
-    technologies: ['Ruby Rails', 'Javascript', 'css', 'html'],
-    live_link: '',
-    live_source: '',
-  },
-  {
-    name: 'Multi-Post Stories Gain+Glory',
-    popup_name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './images/About1',
+    image: '<img src="images/Desktop Snapshoot Portfolio.png" alt="Portfolio Image" />',
     technologies: ['Ruby Rails', 'Javascript', 'css', 'html'],
     live_link: '',
     live_source: '',
@@ -119,15 +117,16 @@ function showPopup(number) {
         <i class="fa-solid fa-x"></i>
       </button>
       <div class="title-image">
-        <img src="./images/Snapshoot Portfolio.png" alt="">
+        ${projects[number].image}
       </div>
       <div class="popup-content">
         <div>
-          <h2>${projects[number].popup_name}</h2>
+          <h2>${projects[number].name}</h2>
           <ul id="work-list">
               <li>${projects[number].technologies[0]}</li>
               <li>${projects[number].technologies[1]}</li>
               <li>${projects[number].technologies[2]}</li>
+              <li>${projects[number].technologies[3]}</li>
           </ul>
           <p id="popup-text">${projects[number].description}</p>
         </div>
