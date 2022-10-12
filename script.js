@@ -166,11 +166,11 @@ function showMessage(input, message) {
   const msg = input.parentNode.querySelector('small');
   const emailInput = document.getElementById('email');
   msg.innerText = message;
-  
+
   // update the class for the input
   msg.className = 'error';
   emailInput.className = 'error-box';
-};
+}
 
 // Function to show error
 
@@ -192,13 +192,13 @@ const form = document.querySelector('#form-id');
 
 const EMAIL_INVALID = 'Enter email in lowercase';
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', (event) => {
   // stop form submission
   event.preventDefault();
   
   // validate the form
   
-  let emailValid = validateEmail(form.elements['email'], EMAIL_INVALID);
+  let emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
   
   // if valid, submit the form.
   
