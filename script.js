@@ -22,6 +22,8 @@ for (let i = 0; i < links.length; i += 1) {
   links[i].addEventListener('click', hideMenu);
 }
 
+// Projects Data to access Dynamically
+
 const projects = [
   {
     name: 'Multi-Post Stories Gain+Glory',
@@ -76,10 +78,12 @@ const projects = [
     technologies: ['Ruby Rails', 'Javascript', 'css', 'html'],
     live_link: '',
     live_source: '',
-  }
-]
+  },
+];
 
-const works = document.getElementById('cards-container')
+// Iterates data of Projects for each card
+
+const works = document.getElementById('cards-container');
 projects.forEach((element) => {
   const project = document.createElement('div');
   project.className = 'card';
@@ -102,6 +106,8 @@ projects.forEach((element) => {
   `;
   works.appendChild(project);
 });
+
+// Update popup window data for each unique card.
 
 function showPopup(number) {
   const popup = document.createElement('div');
@@ -138,12 +144,15 @@ function showPopup(number) {
   works.appendChild(popup);
 
   // Create event listener for close button to remove the popup window on click
+
   const popupClose = document.getElementById('popup-close');
   popupClose.addEventListener('click', () => {
     const popup = document.getElementById('popup-id');
     works.removeChild(popup);
   });
 }
+
+// Loop through the cards to open popup window when See Project button is clicked
 
 const popupButtons = document.getElementsByClassName('see-project-button');
 for (let i = 0; i < popupButtons.length; i += 1) {
