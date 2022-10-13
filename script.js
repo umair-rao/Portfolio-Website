@@ -207,14 +207,37 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-const nameInput = document.getElementById('fname');
-const emailInput = document.getElementById('email');
-const textInput = document.getElementById('textarea');
 
 let formData = {
-  fullName: nameInput, 
-  email: emailInput, 
-  text: textInput,
+  name: '',
+  email: '',
+  message: ''
 }
 
-localStorage.setItem('data', formData);
+setInterval(function () {localStorage.setItem('data', JSON.stringify(formData))}, 1000);
+
+let nameInput = document.getElementById('fname');
+let emailInput = document.getElementById('email');
+let textInput = document.getElementById('textarea')
+
+nameInput.addEventListener('input', () => {
+  formData.name = nameInput.value;
+});
+
+emailInput.addEventListener('input', () => {
+  formData.email = emailInput.value;
+});
+
+textInput.addEventListener('input', () => {
+  formData.message = textInput.value;
+});
+
+if (localStorage.getItem('data')) {
+  let formObject = localStorage.getItem('data')
+  formObject = JSON.parse(formObject);
+
+  document.getElementById('fname').value = formObject.name;
+  document.getElementById('email').value = formObject.email;
+  document.getElementById('textarea').value = formObject.message;
+
+}
