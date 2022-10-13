@@ -231,3 +231,23 @@ textInput.addEventListener('input', () => {
   formData.message = textInput.value;
   localStorage.setItem('data', JSON.stringify(formData))
 });
+
+if (localStorage.getItem('data')) {
+  let formObject = localStorage.getItem('data')
+  formObject = JSON.parse(formObject);
+
+  document.getElementById('fname').value = formObject.name;
+  document.getElementById('email').value = formObject.email;
+  document.getElementById('textarea').value = formObject.message;
+
+}
+
+if (localStorage.getItem('data')) {
+  let formObject = localStorage.getItem('data')
+  formObject = JSON.parse(formObject);
+
+  document.getElementById('fname').value = formObject.name;
+  document.getElementById('email').value = formObject.email;
+  document.getElementById('textarea').value = formObject.message;
+
+}
