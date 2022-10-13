@@ -206,3 +206,15 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+const nameInput = document.getElementById('fname');
+const emailInput = document.getElementById('email');
+const textInput = document.getElementById('textarea');
+
+let formData = {
+  fullName: nameInput, 
+  email: emailInput, 
+  text: textInput,
+}
+
+localStorage.setItem('data', formData);
