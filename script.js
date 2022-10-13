@@ -240,11 +240,10 @@ textInput.addEventListener('input', () => {
 
 if (localStorage.getItem('data')) {
   let formObject = localStorage.getItem('data');
-  formObject = JSON.parse(formObject)
+  formObject = JSON.parse(formObject);
   document.getElementById('fname').value = formObject.name;
   document.getElementById('email').value = formObject.email;
   document.getElementById('textarea').value = formObject.message;
-
 }
 
 if (localStorage.getItem('data')) {
@@ -253,5 +252,4 @@ if (localStorage.getItem('data')) {
   document.getElementById('fname').value = formObject.name;
   document.getElementById('email').value = formObject.email;
   document.getElementById('textarea').value = formObject.message;
-
 }
